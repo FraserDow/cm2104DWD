@@ -1,0 +1,58 @@
+body {
+  margins:auto;
+  width: 80%;
+  background-color: #6D9BDD;
+}
+
+section, article, nav, aside, footer, div {
+  font-family: Verdana;
+  border: 1px dotted #000;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+header {
+  font-family: Verdana;
+  padding: 10px;
+  margin: 10px;
+  background-color: LightBlue;
+  border: 3px dashed red;
+
+}
+
+#PageHeader {
+  font-family: Verdana;
+  padding: 10px;
+  margin: 10px;
+  background-color: LightBlue;
+  border: 3px dashed green;
+
+}
+
+#SiteNavigation {
+  background-color: LightBlue;
+  border: 3px dashed Yellow;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+
+.BlogPost {
+  background-color: LightBlue;
+
+}
+
+#PageContent {
+  border: 1px dashed red;
+
+}
+
+.img1 {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 50%;
+ height: auto;
+ width: auto\9; /* ie8 */
+}

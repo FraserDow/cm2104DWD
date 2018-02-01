@@ -1,0 +1,48 @@
+body {
+  margins:auto;
+  width: 80%;
+  font-family: Verdana;
+  font-size: 15px;
+  color: black;
+  background-color: LightBlue;
+}
+
+header, section, article, nav, aside, footer, div {
+  border: 1px dotted #000;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+div {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+//  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+.BlogPostTitle {
+
+}
+
+.flex-container {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+//  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.img1 {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
