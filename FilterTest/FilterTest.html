@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<link rel="stylesheet" href="FilterTest.css" type="text/css">
+<meta name="viewport" content-type="width=device-width initial-scale=1"
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".button").click(function(){
+          var value = $(this).attr("data-filter");
+          if (value == "all")
+      {
+              $(".Mediacard").show("1000");
+      }
+          else {
+              $(".Mediacard").not("."+value).hide("1000");
+              $(".Mediacard").filter("."+value).show("1000");
+      }
+      //Active class
+            $("ul .button").click(function(){
+              $(this).addClass('active').siblings().removeClass('active');
+            })
+          })
+        })
+</script>
+</head>
+
+<body>
+
+  <div id="header">
+    <div class="Logo">
+      <b>MediaShelter</b>
+    </div>
+      <ul class="navbar">
+        <li><a href="#">Browse Media</a></li>
+        <li><a href="#">Friends List</a></li>
+      </ul>
+    </div>
+
+  <div id="content">
+    <div id="Browse">
+      <h3 class="Browseheader">Browse Media Here to add to your Shelter</h3>
+
+            <div class="filterContainer">
+                    <ul>
+                      <li class="button active" data-filter="all">All</li>
+                      <li class="button" data-filter="movies">Movies</li>
+                      <li class="button" data-filter="games">Games</li>
+                      <li class="button" data-filter="music">Music</li>
+                      <li class="button" data-filter="anime">Anime</li>
+                      <li class="button" data-filter="cartoons">Cartoons</li>
+                      <div styles="clear: both;"></div>
+                    </ul>
+            </div>
+
+      <div class="Mediasection">
+
+        <div class="Mediacard movies">Avengers
+        </div>
+        <div class="Mediacard movies">Jurassic Park
+        </div>
+        <div class="Mediacard games">The Legend of Zelda: Breath of the Wild
+        </div>
+        <div class="Mediacard games">Halo 5
+        </div>
+        <div class="Mediacard anime">Cowboy Bebop
+        </div>
+        <div class="Mediacard anime">Attack on Titan
+        </div>
+        <div class="Mediacard movies">Venom
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+<!--<img src="smiley.jpg" alt="Avatar">-->
+
+</body>
+
+</html>
